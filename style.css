@@ -1,0 +1,261 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top of the page */
+  left: 0; /* Align it to the left */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it stays above other content */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+ }
+
+.page-title{
+  font-size: 30px;
+  font-weight: bold;
+  color: lightyellow;
+  cursor: pointer;
+  margin: 0; /* Remove default margin */
+  position: absolute; /* Position the title absolutely */
+  text-align: center; /* Center the text */
+  left: 50%; /* Move the title to the center */
+  transform: translateX(-50%); /* Adjust to center horizontally */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px; /* Add padding around the text */
+  margin: 0 5px; /* Add margin to create a gap of 10px between words */
+}
+
+
+nav a.active {
+  color: blue; /* Change the text color to blue */
+  font-weight: bold; /* Optional: Make the active link bold */
+}
+
+section {
+  padding: 40px;
+  margin-top: 50px;
+}
+
+#hero {
+  position: relative; /* Position relative for absolute positioning of background */
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Add some margin for spacing */
+  cursor: none;
+  color: white; /* Change text color to white for better visibility */
+  padding: 100px 40px; /* Increase padding for the hero section */
+  transition: padding 0.3s ease; /* Add transition for smooth animation */
+}
+
+
+#hero h1 {
+  font-size: 2.5em; /* Adjust the font size as needed */
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+
+#hero p {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  color: #666; /* Optional: Change the color for better visibility */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+form {
+  border: 2px solid #333; /* Set the border color and thickness */
+  padding: 20px; /* Add padding inside the form */
+  margin: 0 70px; /* Maintain 70px space on left and right */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  background-color: #f9f9f9; /* Optional: Set a background color */
+}
+
+form input, form textarea {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Add a border to inputs */
+  border-radius: 4px; /* Optional: Add rounded corners to inputs */
+}
+
+
+form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  margin-right: auto; /* Push the nav to the right */
+  margin-left: 10px; /* Add some space from the left */
+}
+
+.profile-icon img {
+  width: 40px; /* Set the width of the icon */
+  height: 40px; /* Set the height of the icon */
+  border-radius: 50%; /* Make it circular, if desired */
+}
+
+.profile-background {
+  position: absolute; /* Position it absolutely within the hero section */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('tribute.png'); /* Replace with your profile image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  filter: blur(10px); /* Apply a blur effect */
+  z-index: -1; /* Send it to the back */
+}
+
+#portfolio .project {
+  margin-bottom: 30px;
+}
+
+#portfolio img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-item {
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.skill-item:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+}
+
+.image-display {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-frame {
+    width: 600px; /* Set width of the frame */
+    height: auto; /* Set height of the frame */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow */
+    align-items: center; /* Center the image vertically */
+    border: 1px solid #ccc; /* Optional: Add a border to the frame */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    display: flex; /* Use flexbox for centering */
+}
+
+#skill-image {
+    max-width: 100%; /* Scale image to fit the frame */
+    max-height: 100%; /* Scale image to fit the frame */
+    display: none; /* Initially hidden */
+}
+
+
+.modal {
+    display: flex; /* Use flexbox to center the modal */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%; /* Width of the modal */
+    max-height: 80%; /* Maximum height of the modal */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.resume-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center images horizontally */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+}
+.resume-image {
+    width: 900px; /* Set a fixed width for the images */
+    height: auto; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the images cover the box without distortion */
+    margin: 10px; /* Add space between images */
+}
+
+#about{}

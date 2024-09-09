@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilesh Desale | Personal Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+     <a href="#hero" class="profile-icon">
+        <img src="Nilesh.jpg" alt="Profile Icon" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </nav>
+    <h1 class="page-title" class="name" onclick="openResumeModal()" value="Click for Reseume">Nilesh Desale</h1>
+    <div class="modal" id="resume-modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeResumeModal()">&times;</span>
+            <h2>Resume</h2>
+            <div class="resume-content">
+                <img class="resume-image" src="G:\Nilesh\Projects\Personal profile\9c33e499-e494-4666-999a-1006f7f6050a-0.jpg">
+                <img class="resume-image" src="G:\Nilesh\Projects\Personal profile\9c33e499-e494-4666-999a-1006f7f6050a-1.jpg">
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="profile-background"></div>
+      <h1>Nilesh Desale</h1>
+      <p>Web Developer | Designer</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm NIlesh Desale, a passionate web developer and designer. I am a dedicated web developer with a strong foundation in HTML, CSS, and JavaScript. My passion lies in crafting visually appealing and user-friendly websites that effectively communicate messages and drive engagement. I am skilled in creating responsive designs, implementing interactive elements, and optimizing websites for performance. My goal is to leverage my technical expertise to deliver innovative web solutions that exceed client expectations.</p>
+    </section>
+
+    <section id="skills">
+   <div class="skills-section">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+            <li class="skill-item " data-image="HTML.jpeg" onclick="displayImage(this)">HTML</li>
+            <li class="skill-item " data-image="image3.jpg" onclick="displayImage(this)">CSS</li>
+            <li class="skill-item "  data-image="image1.jpg" onclick="displayImage(this)">JavaScript</li>
+            <li class="skill-item " data-image="IBM.jpg" onclick="displayImage(this)">Frontend Web Development</li>
+        </ul>
+    </div>
+    <div class="image-display">
+        <div class="image-frame">
+            <img id="skill-image" src="" alt="Skill Image" />
+        </div>
+    </div>
+    </section>
+
+    <section id="portfolio">
+    <h2>Portfolio</h2>
+    <ul>
+      <div class="project">
+        <li><h2>Restaurant Landing Page</h2></li>
+        <p>I have create a landing page for restaurant name as Vintage Elegance Restro</p>
+        <a href="G:\Nilesh\Projects\Restaurant landing page\index.html">Shift to see</a>
+      </div>
+      <div class="project">
+        <li><h2>Tribute page</h2></li>
+        <p>Description of Project 2</p>
+        <a href="G:\Nilesh\Projects\Tribute Page\index.html">Shift to see</a>
+      </div>
+    </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Nilesh Desale. All rights reserved.</p>
+    <div class="social-links">
+      <a href="http://www.linkedin.com/in/nilesh-desale-a79872282"><img src="Linkdin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/Nilu024"><img src="git.png" alt="GitHub"></a>
+      <a href="#"><img src="twit.jpg" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
