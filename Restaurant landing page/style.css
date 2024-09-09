@@ -8,6 +8,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: ghostwhite;
+    position: relative;
 }
 
 header {
