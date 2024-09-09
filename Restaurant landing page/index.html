@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Vintage Elegance Bistro</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation" class="btn-reserve">Reserve a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop id="background-video">
+            <source src="G:\Nilesh\Projects\Restaurant landing page\The Heavy Hitting Burger - Promo Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Delicious food awaits you!</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the best dining experience with fresh ingredients and exceptional service.</p>
+        <p>At our restaurant, we pride ourselves on providing a warm and inviting atmosphere for all our guests. Our facilities include a spacious dining area that comfortably accommodates both intimate dinners and larger gatherings. Enjoy our outdoor seating area, perfect for al fresco dining under the stars. We also offer a fully stocked bar featuring a curated selection of wines, craft beers, and signature cocktails. For families, we provide a dedicated kids' menu and a play area to keep the little ones entertained. Our state-of-the-art kitchen is equipped with the latest technology to ensure the freshest and highest quality meals, prepared by our skilled chefs. Whether you're here for a casual meal or a special occasion, we strive to make every visit memorable.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Burger</h3>
+                <p>₹150</p>
+            </div>
+            <div class="menu-item">
+                <h3>Pasta</h3>
+                <p>₹180</p>
+            </div>
+            <div class="menu-item">
+                <h3>Salad</h3>
+                <p>₹80</p>
+            </div>
+            <div class="menu-item">
+                <h3>Dessert</h3>
+                <p>₹100</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: vintage@restaurant.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <section id="reservation">
+
+        <form id="order-form">
+        <h2>Choose Your Meal</h2>
+        
+        <div class="meal-selection">
+            <label>
+                <input type="radio" name="meal" value="pasta" data-price="12"> Pasta - $180
+            </label>
+            <label>
+                <input type="radio" name="meal" value="burger" data-price="10"> Burger - $150
+            </label>
+            <label>
+                <input type="radio" name="meal" value="pizza" data-price="15"> Pizza - $120
+            </label>
+        </div>
+        
+        <button type="submit">Place Order</button>
+    </form>
+
+    <div id="receipt" class="hidden">
+        <h3>Bill Receipt</h3>
+        <p id="selected-meal">Selected Meal: <span id="meal-name"></span></p>
+        <p id="meal-price">Price: $<span id="price"></span></p>
+    </div>
+    
+        <h2 class="table-reserve">Reserve a Table</h2>
+        <form id="reservation-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="date" required>
+            <input type="time" required>
+            <button type="submit" class="btn">Submit Reservation</button>
+    
+        </form>
+    </section><br><br>
+
+    <footer>
+        <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
