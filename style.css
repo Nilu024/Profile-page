@@ -131,7 +131,7 @@ form input, form textarea {
 }
 
 
-form button {
+.btn {
   background-color: #2c2a22;
   color: #fff;
   border: none;
