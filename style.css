@@ -172,8 +172,6 @@ form button {
   height: auto;
 }
 
-
-
 .skills-list {
     list-style-type: none;
     padding: 0;
@@ -183,7 +181,7 @@ form button {
     cursor: pointer; /* Change cursor to pointer */
     padding: 10px;
     margin: 5px 0;
-    background-color: #f0f0f0;
+    background-color: #57514f;
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: background-color 0.3s;
