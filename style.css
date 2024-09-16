@@ -135,8 +135,18 @@ form button {
   background-color: #333;
   color: #fff;
   border: none;
+  box-shadow: 0 0 10px #83544a;
+  border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+form button:hover{
+  background-color: #c9be7c;
+  color: #1b5e4c;
+  box-shadow: 0 0 20px #7fcb31;
+  border-radius: 20px;
+  transition: 0.5s;
 }
 
 .profile-icon {
