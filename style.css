@@ -4,6 +4,8 @@ body {
   padding: 0;
   padding-top: 60px;
   position: relative;
+  background-color: black;
+  color: white;
 }
 
 header {
@@ -71,6 +73,10 @@ section {
   margin-top: 50px;
 }
 
+#portfolio a{
+  color: #B7CEEC;
+}
+
 #hero {
   position: relative; /* Position relative for absolute positioning of background */
   text-align: center; /* Center the text */
@@ -107,16 +113,18 @@ footer {
 }
 
 form {
+  z-index: -1;
   border: 2px solid #333; /* Set the border color and thickness */
   padding: 20px; /* Add padding inside the form */
   margin: 0 70px; /* Maintain 70px space on left and right */
   border-radius: 5px; /* Optional: Add rounded corners */
-  background-color: #f9f9f9; /* Optional: Set a background color */
+  background-color: #3a3b3c; /* Optional: Set a background color */
 }
 
 form input, form textarea {
   width: calc(100% - 20px); /* Adjust width to account for padding */
   padding: 10px;
+  background-color: #8c8c8c;
   margin-bottom: 20px;
   border: 1px solid #ccc; /* Add a border to inputs */
   border-radius: 4px; /* Optional: Add rounded corners to inputs */
@@ -183,18 +191,20 @@ form button {
 
 .skill-item:hover {
     background-color: #e0e0e0; /* Change background on hover */
+    color: black;
 }
 
 .image-display {
     margin-top: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-frame {
     width: 600px; /* Set width of the frame */
     height: auto; /* Set height of the frame */
-    justify-content: center;
-    align-items: center;
     overflow: hidden; /* Hide overflow */
     align-items: center; /* Center the image vertically */
     border: 1px solid #ccc; /* Optional: Add a border to the frame */
@@ -259,4 +269,49 @@ form button {
     margin: 10px; /* Add space between images */
 }
 
-#about{}
+  form{
+      padding: 15px 40px;
+      border: none;
+      outline: none;
+      color: #fff;
+      position: relative;
+      z-index: 0;
+      border-radius: 12px;
+    }
+    form::after{
+      content: '';
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #333;
+      top: 0;
+      left: 0;
+      border-radius: 12px;
+    }
+    form::before{
+      content: '';
+      background: linear-gradient(
+        45deg,
+        #ff0000, #ff7300, #fffb00, #48ff00,
+        #00ffd5, #002bff, #ff00c8, #ff0000
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 600%;
+      z-index: -1;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      filter: blur(8px);
+      animation: lightning 20s linear infinite;
+      transition: opacity .3s ease-in-out;
+      border-radius: 12px;
+      opacity: 1;
+    }
+    @keyframes lightning{
+      0%{background-position: 0 0;}
+      50%{background-position: 400% 0;}
+      100%{background-position: 0 0;}
+    }
+
