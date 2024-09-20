@@ -73,6 +73,10 @@ section {
   margin-top: 50px;
 }
 
+#about{
+  text-align: center;
+}
+
 #portfolio a{
   color: #B7CEEC;
 }
