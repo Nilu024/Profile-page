@@ -77,6 +77,10 @@ section {
   text-align: center;
 }
 
+#about h2{
+  text-align: start;
+}
+
 #portfolio a{
   color: #B7CEEC;
 }
