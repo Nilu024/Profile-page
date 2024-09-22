@@ -331,3 +331,180 @@ form button:hover{
       100%{background-position: 0 0;}
     }
 
+
+@media (max-width : 650px){
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+.page-title {
+  padding-left: 30%;
+  font-size: 22px; 
+}
+
+#home , #about , #contact , #portfolio{
+  padding-top: 10px;
+}
+
+.links-container{
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  width: 300px;
+  background-color: #0f1016;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+  transition: 0.75s ease-out;
+}
+
+#open-sidebar-button{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+#open-sidebar-button {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 11;
+}
+
+.open-sidebar-button svg {
+  width: 30px;
+  height: 30px;
+}
+
+nav a{
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  padding: 20px 30px;
+  justify-content: flex-start;
+}
+
+nav ul {
+  flex-direction: column;
+}
+
+nav li {
+  padding-top: 20px;
+  margin: 5px 0; 
+}
+
+.open-sidebar-button , .close-sidebar-button{
+  padding: 20px;
+  display: block;
+}
+
+#sidebar-active:checked ~ .links-container{
+  right: 0;
+}
+
+#sidebar-active:checked ~ #overlay{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+main {
+  padding: 20px; 
+}
+
+section {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#hero {
+  padding: 60px 20px; 
+}
+
+#hero h1 {
+  font-size: 2em; 
+}
+
+#hero p {
+  font-size: 1.2em;
+}
+
+#about p{
+  text-align: center;
+}
+
+#portfolio .project {
+  margin-bottom: 15px;
+}
+
+form {
+  margin: 0 auto; 
+  padding: 15px 5px;
+}
+
+form input, form textarea {
+  width: calc(100% - 20px);
+}
+
+button{
+  width: 100%;
+}
+
+
+footer {
+  padding: 15px; 
+}
+}
+
+@media (max-width: 800px) {
+header{
+  padding: 0;
+  display: flex;
+}
+
+.page-title{ 
+  position: absolute;
+  text-align: center;
+  left: 25%;
+}
+
+section {
+  padding-top: 5px;
+  margin-top: 0;
+}
+
+#hero h1{
+  margin: -16px;
+  text-align: center;
+}
+
+.modal-content {
+  width: 90%; 
+  padding: 10px;
+}
+
+.resume-image {
+  width: 100%; 
+  height: auto; 
+}
+
+.image-frame {
+  width: 100%; 
+  height: auto;
+}
+
+.social-links img {
+  width: 25px; 
+  height: auto;
+}
+}
