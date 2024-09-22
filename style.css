@@ -296,10 +296,15 @@ form button:hover{
     overflow-y: auto; /* Enable vertical scrolling */
 }
 
+.modal-content h2{;
+  text-align: center;
+  font-size: 2em;
+}
+
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
     cursor: pointer;
     position: fixed;
@@ -552,8 +557,7 @@ section {
 
 @media(max-width:400px){
   #about p{
-    text-align: left;
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .links-container{
