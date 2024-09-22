@@ -382,6 +382,7 @@ body {
 .page-title {
   padding-left: 30%;
   font-size: 22px; 
+  z-index: -1;
 }
 
 #home , #about , #contact , #portfolio{
