@@ -33,6 +33,28 @@ header {
   transform: translateX(-50%); /* Adjust to center horizontally */
 }
 
+
+.page-title:hover{
+  font-size: 29px;
+  transition: 0.2s;
+}
+
+nav{
+  height: 60px;
+  background-color: var(--color-1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -62,10 +84,27 @@ nav a {
   margin: 0 5px; /* Add margin to create a gap of 10px between words */
 }
 
+nav a:hover{
+  color: #d08dd2;
+}
 
 nav a.active {
+  font-size: 17px;
+  box-shadow: 0 0 2px #4d3d56;
   color: blue; /* Change the text color to blue */
   font-weight: bold; /* Optional: Make the active link bold */
+}
+
+nav svg{
+  fill: #f0f0f0;
+}
+
+#sidebar-active{
+  display: none;
+}
+
+.open-sidebar-button , .close-sidebar-button{
+  display: none;
 }
 
 section {
