@@ -354,9 +354,15 @@ form::before{
   content: '';
   background: linear-gradient(
   45deg,
-  #ff0000, #ff7300, #fffb00, #48ff00,
-  #00ffd5, #002bff, #ff00c8, #ff0000
-  );
+  #ff0000,  
+  #ff7300,  
+  #fffb00,  
+  #48ff00,  
+  #00ffd5,  
+  #002bff,  
+  #ff00c8,  
+  #ff0000   
+);
   position: absolute;
   top: -2px;
   left: -2px;
