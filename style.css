@@ -553,6 +553,7 @@ section {
 @media(max-width:400px){
   #about p{
     text-align: left;
+    font-size: 15px;
   }
 
   .links-container{
