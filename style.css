@@ -117,7 +117,7 @@ section {
 }
 
 #about h2{
-  text-align: start;
+  text-align: left;
 }
 
 #portfolio a{
@@ -548,4 +548,14 @@ section {
   width: 25px; 
   height: auto;
 }
+}
+
+@media(max-width:400px){
+  #about p{
+    text-align: left;
+  }
+
+  .links-container{
+    width: 200px;
+  }
 }
