@@ -446,8 +446,6 @@ body {
   justify-content: flex-end;
 }
 
-
-
 #open-sidebar-button {
   display: flex;
   justify-content: flex-end;
@@ -505,7 +503,10 @@ section {
   margin-bottom: 20px;
   margin-top: 0;
 }
-
+#skills-list{
+  display: block;
+}
+  
 #hero {
   padding: 60px 20px; 
 }
@@ -538,7 +539,6 @@ form input, form textarea {
 button{
   width: 100%;
 }
-
 
 footer {
   padding: 15px; 
