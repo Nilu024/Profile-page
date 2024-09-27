@@ -352,35 +352,6 @@ form::after{
   left: 0;
   border-radius: 12px;
 }
-/* 
-form::before{
-  q
-  content: '';
-  background: linear-gradient(
-  45deg,
-  #ff0000,  
-  #ff7300,  
-  #fffb00,  
-  #48ff00,  
-  #00ffd5,  
-  #002bff,  
-  #ff00c8,  
-  #ff0000   
-);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 600%;
-  z-index: -1;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  filter: blur(8px);
-  animation: lightning 20s linear infinite;
-  transition: opacity .3s ease-in-out;
-  border-radius: 12px;
-  opacity: 1;
-} */
-
 
 form::before{
       content: '';
@@ -503,7 +474,7 @@ section {
   margin-bottom: 20px;
   margin-top: 0;
 }
-#skills-list{
+.skills-list{
   display: block;
 }
   
