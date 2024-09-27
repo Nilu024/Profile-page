@@ -237,6 +237,7 @@ form button:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 70%;
   cursor: pointer; 
   padding: 10px;
   margin: 5px 0;
