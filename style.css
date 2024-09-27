@@ -468,10 +468,13 @@ nav li {
 }
 
 main {
-  padding: 20px; 
+  padding: 20px;
+  padding-left: 0;
+  padding-right:0;
 }
 
 section {
+  padding: 10px;
   margin-bottom: 20px;
   margin-top: 0;
 }
