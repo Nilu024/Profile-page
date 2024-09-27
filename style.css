@@ -479,7 +479,8 @@ section {
   margin-top: 0;
 }
 .skills-list{
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
   
 #hero {
